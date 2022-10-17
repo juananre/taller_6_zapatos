@@ -155,6 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.taller6.taller_6_zapatos
     Standalone: com.taller6.taller-6-zapatos
   buildNumber:
     Standalone: 0
