@@ -378,7 +378,7 @@ MonoBehaviour:
   mainCamera: {fileID: 823304605}
   cubitos: []
   cubobase: {fileID: 2091790471}
-  escena: 2
+  escena: 5
 --- !u!4 &1981776856
 Transform:
   m_ObjectHideFlags: 0

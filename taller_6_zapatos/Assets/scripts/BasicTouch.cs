@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
 public class BasicTouch : MonoBehaviour
 {
     public Camera mainCamera;
     public GameObject[] cubitos;
     public GameObject cubobase;
+    [SerializeField] int escena;
     Vector3 pos;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,11 @@ public class BasicTouch : MonoBehaviour
         //FollowFinger();
         //FollowFingerssss();
         TouchPhaser();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(escena);
+        }
 
     }
 
