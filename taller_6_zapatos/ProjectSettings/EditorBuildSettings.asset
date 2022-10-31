@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/personaje1_final.unity
     guid: fcbb05a1ac91e4742abb816669ed64fc
   - enabled: 1
-    path: Assets/Scenes/minijuego luisa.unity
-    guid: 5b66ae8c4ab465e4ca22c07b6fd487ef
-  - enabled: 1
     path: Assets/Scenes/personaje3.unity
     guid: c74b2c959ad4acc499f763b91ea3e5f6
+  - enabled: 1
+    path: Assets/Scenes/minijuego luisa.unity
+    guid: 5b66ae8c4ab465e4ca22c07b6fd487ef
   - enabled: 1
     path: Assets/Scenes/personaje3_final.unity
     guid: 6924f4da8f4c13849a786d826fcf5ecb
