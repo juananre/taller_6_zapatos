@@ -850,7 +850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -708.5}
+  m_AnchoredPosition: {x: 0, y: -1000}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1280838588
@@ -923,6 +923,10 @@ GameObject:
   - component: {fileID: 1352266059}
   - component: {fileID: 1352266061}
   - component: {fileID: 1352266062}
+  - component: {fileID: 1352266063}
+  - component: {fileID: 1352266064}
+  - component: {fileID: 1352266065}
+  - component: {fileID: 1352266066}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1025,7 +1029,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1352266043}
+  - {fileID: 1352266033}
   selectedCommands: []
   variables: []
   description: 
@@ -1067,8 +1071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 279.61047
-    y: 105.08716
+    x: 270.8192
+    y: 106.18606
     width: 142.30768
     height: 40
   tint: {r: 1, g: 0.714446, b: 0, a: 1}
@@ -1211,7 +1215,7 @@ MonoBehaviour:
   indentLevel: 0
   text: "pornese los zapatos \n"
   description: 
-  targetBlock: {fileID: 1352266033}
+  targetBlock: {fileID: 1352266063}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1234,8 +1238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 513.58215
-    y: 103.29953
+    x: 672.9231
+    y: 125.27753
     width: 134.61539
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1290,8 +1294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 721.0882
-    y: 105.19513
+    x: 881.528
+    y: 131.56876
     width: 102.74725
     height: 40
   tint: {r: 0.115877524, g: 0.7924528, b: 0.21395108, a: 1}
@@ -1510,7 +1514,7 @@ MonoBehaviour:
   indentLevel: 0
   display: 2
   stage: {fileID: 0}
-  character: {fileID: 885298612}
+  character: {fileID: 108047039}
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 0}
   offset: 0
@@ -1526,7 +1530,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &1352266062
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1543,10 +1547,124 @@ MonoBehaviour:
     audioSourceRef: {fileID: 0}
     audioSourceVal: {fileID: 430630068}
   startVolume: 1
-  endVolume: 1
+  endVolume: 0.564
   fadeDuration: 0.5
   waitUntilFinished: 0
   audioSourceOLD: {fileID: 0}
+--- !u!114 &1352266063
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 483.26956
+    y: 114.11725
+    width: 91.75824
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 42
+  blockName: zapatos
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1352266064}
+  - {fileID: 1352266065}
+  - {fileID: 1352266066}
+  suppressAllAutoSelections: 0
+--- !u!114 &1352266064
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 885298612}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1352266065
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 44
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 108047039}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: bca405818493a4f4a8fb63a69294d19a, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1280838587}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1352266066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  text: salir al hospital
+  description: 
+  targetBlock: {fileID: 1352266033}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &1498582149
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,9 +27,13 @@ public class BasicTouch : MonoBehaviour
 
     [SerializeField] float timer;
 
-    bool verifi=false;
+    [SerializeField] Transform mapa;
 
-    Vector3 pos;
+    bool verifi=false;
+    private int velicidad=0;
+    private int quieto1 = 960;
+    private int quieto2 = 540;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +82,9 @@ public class BasicTouch : MonoBehaviour
 
 
             if (t.phase == TouchPhase.Began) {
+
+                velicidad -=70;
+                mapa.position = new Vector3(quieto1, velicidad, quieto2);
                 puntaje++;
                 Debug.Log("Tap");
             }
@@ -98,34 +105,34 @@ public class BasicTouch : MonoBehaviour
         verifi = true;
         if (puntaje == 5)
         {
-            
+
             insulto_1.SetActive(true);
         }
-        if (puntaje == 20)
+        if (puntaje == 15)
         {
             insulto_2.SetActive(true);
         }
-        if (puntaje == 30)
+        if (puntaje == 20)
         {
             insulto_3.SetActive(true);
         }
-        if (puntaje == 40)
+        if (puntaje == 30)
         {
             insulto_4.SetActive(true);
         }
-        if (puntaje == 60)
+        if (puntaje == 45)
         {
             insulto_5.SetActive(true);
+        }
+        if (puntaje == 60)
+        {
+            insulto_6.SetActive(true);
         }
         if (puntaje == 70)
         {
             insulto_6.SetActive(true);
         }
         if (puntaje == 80)
-        {
-            insulto_6.SetActive(true);
-        }
-        if (puntaje == 85)
         {
             insulto_7.SetActive(true);
         }
