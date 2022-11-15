@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.13636
+    x: 69.27272
     y: 68.86364
     width: 80.681816
     height: 40
@@ -1272,8 +1272,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1461171498}
+  selectedCommands:
+  - {fileID: 1461171500}
   variables: []
   description: 
   stepPause: 0
@@ -1382,8 +1384,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1461171525}
   - {fileID: 1461171524}
-  - {fileID: 1461171500}
   - {fileID: 1461171499}
+  - {fileID: 1461171500}
   - {fileID: 1461171504}
   - {fileID: 1461171503}
   suppressAllAutoSelections: 0

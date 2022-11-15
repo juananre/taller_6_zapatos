@@ -785,6 +785,8 @@ GameObject:
   - component: {fileID: 1352266050}
   - component: {fileID: 1352266054}
   - component: {fileID: 1352266053}
+  - component: {fileID: 1352266055}
+  - component: {fileID: 1352266056}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -822,7 +824,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 68
-    y: 102
+    y: 103
     width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -832,6 +834,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1352266019}
   commandList:
+  - {fileID: 1352266056}
+  - {fileID: 1352266055}
   - {fileID: 1352266054}
   - {fileID: 1352266053}
   - {fileID: 1352266052}
@@ -862,8 +866,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1352266048}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -983,7 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 339.18707
+    x: 338.18707
     y: 94.80221
     width: 95
     height: 40
@@ -1161,6 +1164,50 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 0
+--- !u!114 &1352266055
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: "\xA1aaahhhh!"
+  description: 
+  character: {fileID: 108047039}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1352266056
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352266017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 34bf73d9a03ffbe49912cd0dd420ec86, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1498582149
 GameObject:
   m_ObjectHideFlags: 0
